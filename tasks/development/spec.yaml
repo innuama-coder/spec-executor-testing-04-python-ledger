@@ -1,0 +1,20 @@
+version: "2.0"
+name: "python-ledger-totals"
+repo:
+  url: "https://github.com/innuama-coder/spec-executor-testing-04-python-ledger.git"
+  branch: "main"
+task_dir: "tasks/development"
+executor: "codex"
+deliverables:
+  - path: "src/ledger_totals.py"
+    verify: "python -m unittest && python -m unittest tests.test_acceptance_ledger_totals"
+  - path: "tests/test_ledger_totals.py"
+    verify: "python -m unittest && python -m unittest tests.test_acceptance_ledger_totals"
+  - path: "docs/DELIVERY.md"
+    verify: "test -s docs/DELIVERY.md && grep -q \"^执行结果：通过$\" docs/DELIVERY.md"
+execution:
+  poll_interval_sec: 2
+  idle_timeout_sec: 60
+  max_duration_min: 10
+  max_nudge_count: 3
+  max_consecutive_escalate: 2
