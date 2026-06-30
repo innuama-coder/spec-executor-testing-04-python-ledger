@@ -1,0 +1,121 @@
+{
+  "deliverables": {
+    "aggregate": {
+      "failed": 0,
+      "passed": 3,
+      "total": 3,
+      "total_duration_ms": 713,
+      "verify_executed": 3,
+      "verify_passed": 3,
+      "warning_items": 0
+    },
+    "finished_at": "2026-06-30T09:31:25.350704+00:00",
+    "items": [
+      {
+        "duration_ms": 353,
+        "existence": "present_file",
+        "existence_detail": null,
+        "failure_detail": null,
+        "failure_reason": null,
+        "passed": true,
+        "path": "src/ledger_totals.py",
+        "verify_command": "python -m unittest && python -m unittest tests.test_acceptance_ledger_totals",
+        "verify_duration_ms": 353,
+        "verify_exit_code": 0,
+        "verify_signal": null,
+        "verify_stderr_tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+        "verify_stdout_tail": "",
+        "verify_timed_out": false,
+        "warnings": []
+      },
+      {
+        "duration_ms": 352,
+        "existence": "present_file",
+        "existence_detail": null,
+        "failure_detail": null,
+        "failure_reason": null,
+        "passed": true,
+        "path": "tests/test_ledger_totals.py",
+        "verify_command": "python -m unittest && python -m unittest tests.test_acceptance_ledger_totals",
+        "verify_duration_ms": 352,
+        "verify_exit_code": 0,
+        "verify_signal": null,
+        "verify_stderr_tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n",
+        "verify_stdout_tail": "",
+        "verify_timed_out": false,
+        "warnings": []
+      },
+      {
+        "duration_ms": 7,
+        "existence": "present_file",
+        "existence_detail": null,
+        "failure_detail": null,
+        "failure_reason": null,
+        "passed": true,
+        "path": "docs/DELIVERY.md",
+        "verify_command": "test -s docs/DELIVERY.md && grep -q \"^执行结果：通过$\" docs/DELIVERY.md",
+        "verify_duration_ms": 7,
+        "verify_exit_code": 0,
+        "verify_signal": null,
+        "verify_stderr_tail": "",
+        "verify_stdout_tail": "",
+        "verify_timed_out": false,
+        "warnings": []
+      }
+    ],
+    "not_run_reason": null,
+    "started_at": "2026-06-30T09:31:24.637413+00:00",
+    "verification": "ran"
+  },
+  "generated_at": "2026-06-30T09:31:24.627777+00:00",
+  "merging": {
+    "attempted": false,
+    "base_branch": null,
+    "conflict": null,
+    "merge_commit_sha": null,
+    "merged_at": null,
+    "push_detail": null,
+    "push_status": "not_attempted",
+    "pushed": false,
+    "result": "skipped",
+    "skip_reason": "skipped",
+    "source_branch": "spec-exec/python-ledger-totals-K1M59G"
+  },
+  "metadata": {
+    "duration_ms": 243310,
+    "executor": "codex",
+    "finished_at": "2026-06-30T09:31:24.627777+00:00",
+    "log_dir": "/private/tmp/se-realtest/ws-fix04b/.logs/python-ledger-totals-K1M59G",
+    "mode": "worktree",
+    "repo_branch_base": "main",
+    "repo_branch_worktree": "spec-exec/python-ledger-totals-K1M59G",
+    "repo_url": "https://github.com/innuama-coder/spec-executor-testing-04-python-ledger.git",
+    "session_id": "python-ledger-totals-K1M59G",
+    "started_at": "2026-06-30T09:27:21.317712+00:00",
+    "task_name": "python-ledger-totals",
+    "worktree_path": "/private/tmp/se-realtest/ws-fix04b/.spec-executor-worktrees/python-ledger-totals-K1M59G"
+  },
+  "monitoring": {
+    "consecutive_escalate": 0,
+    "decision_done": 1,
+    "decision_escalate_normalized": 0,
+    "decision_fallback_used": 0,
+    "decision_nudge": 2,
+    "decision_timeout": 0,
+    "decision_total": 3,
+    "idle_timeout_hits": 3,
+    "last_decision_action": "done",
+    "last_decision_text": "Task complete. Worked for 3m 20s. 8+2 tests pass, handoff summary with verification results shown.",
+    "monitoring_finished_at": "2026-06-30T09:31:24.627777+00:00",
+    "monitoring_started_at": "2026-06-30T09:27:42.822689+00:00",
+    "nudge_count": 2,
+    "poll_count": 25
+  },
+  "schema_version": "spec-executor-report/2.0",
+  "spec_executor_version": "2.2.7",
+  "status": {
+    "failure_category": null,
+    "failure_detail": null,
+    "result": "passed"
+  }
+}
