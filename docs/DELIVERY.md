@@ -21,11 +21,11 @@ python -m unittest tests.test_acceptance_ledger_totals
 
 ## 执行记录
 
-实现摘要：待填写
+实现摘要：已实现 `calculate_invoice_total`，支持行项目小计、折扣、税额、总价计算，拒绝负数量、负单价、负折扣率和负税率，并将金额四舍五入到两位小数；已补齐任务级单元测试覆盖空列表、单行、多行、折扣税率、舍入和负数输入。
 
-验证命令：待填写
+验证命令：`python -m unittest`；`python -m unittest tests.test_acceptance_ledger_totals`
 
-执行结果：待填写
+执行结果：通过
 
 ## 通过标准
 
