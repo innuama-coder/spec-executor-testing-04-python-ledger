@@ -51,8 +51,11 @@
 
 ## Merging Result
 
-**Result:** — Skipped
+**Result:** ✓ Merged
 
-- **Reason:** `skipped`
-- **Worktree status:** `kept_for_manual_review`
+- **Source branch:** `spec-exec/python-ledger-totals-K1M59G`
+- **Target branch:** `main`
+- **Merge commit:** `526be3a0e3a2d974d7041c486fd465dffda5f88d`
+- **Merged at:** `2026-06-30T09:31:25.537915+00:00`
+- **Push:** `pushed` to `origin`
 
